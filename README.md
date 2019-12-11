@@ -1,6 +1,12 @@
 # Solved-Tasks
-* Task 1
+#### Do I get a bonus?
 ```javascript
-const a = 123;
-let b = "Hello World!";
+function bonusTime(salary, bonus) {
+if (bonus == true){
+  salary *= 10;
+  return "\u00A3"+salary;
+  }else{
+    return "\u00A3"+salary;
+  }
+}
 ```
