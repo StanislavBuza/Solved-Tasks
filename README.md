@@ -1,5 +1,6 @@
 # Solved-Tasks
 * Task 1
 ```javascript
-const = 123;
+const a = 123;
+let b = "Hello World!";
 ```
