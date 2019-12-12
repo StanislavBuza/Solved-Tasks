@@ -20,3 +20,13 @@ for (let i = min;i <=max; i+=step){
   return array;
 }
 ```
+#### CodeWars Task : Keep up the hoop
+```javascript
+function hoopCount (n) {
+   if (n >= 10){
+   return "Great, now move on to tricks";
+   } else {
+   return "Keep at it until you get it";  
+   }
+}
+```
