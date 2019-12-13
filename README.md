@@ -36,3 +36,20 @@ function apple(x){
   return (Math.pow(x,2) > 1000) ?  'It\'s hotter than the sun!!' : 'Help yourself to a honeycomb Yorkie for the glovebox.';
 }
 ```
+#### CodeWars Task :Count of positives / sum of negatives
+```javascript
+function countPositivesSumNegatives(arr) {
+    if (arr === null || arr.length === 0) return [];
+    
+    let countPos = 0, summNeg = 0;
+    
+    for (let i = 0;i < arr.length; i++){
+    if (arr[i] > 0){
+    countPos++;
+    } else {
+    summNeg +=arr[i];
+    }
+   }
+   return [countPos,summNeg];
+}
+```
