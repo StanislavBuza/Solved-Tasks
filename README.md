@@ -53,3 +53,11 @@ function countPositivesSumNegatives(arr) {
    return [countPos,summNeg];
 }
 ```
+#### CodeWars Task :I love you, a little , a lot, passionately ... not at all
+```javascript
+function howMuchILoveYou(n) {
+    const fl = ['I love you','a little','a lot','passionately','madly','not at all'];
+return fl[(n - 1) % 6];
+
+}
+```
