@@ -61,3 +61,18 @@ return fl[(n - 1) % 6];
 
 }
 ```
+#### CodeWars Task : Complementary DNA
+```javascript
+
+function DNAStrand(dna){
+  let a = '';
+  
+  for (let i = 0; i < dna.length; i++){
+    if (dna[i] === 'A') a+= 'T';
+    if (dna[i] === 'T') a+= 'A';
+    if (dna[i] === 'G') a+= 'C';
+    if (dna[i] === 'C') a+= 'G';
+  }
+  return a;
+}
+```
