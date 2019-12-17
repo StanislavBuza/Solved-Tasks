@@ -101,3 +101,13 @@ function drawStairs(n) {
     return s;
 }
 ```
+#### CodeWars Task : A wolf in sheep's clothing
+```javascript
+function warnTheSheep(q) {
+const l = q.length;
+const w = q.indexOf('wolf');
+if (l === w + 1) return "Pls go away and stop eating my sheep";
+
+return `Oi! Sheep number ${l - 1 - w}! You are about to be eaten by a wolf!`;
+}
+```
