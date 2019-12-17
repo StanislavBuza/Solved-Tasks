@@ -90,3 +90,14 @@ for (let i = 0;i < sorted.length - 1; i++){
 return summ;
 }
 ```
+#### CodeWars Task : Draw stairs
+```javascript
+function drawStairs(n) {
+  
+  let s = '';
+  for (let i = 1; i<=n ; i++){
+  s += i === n ? 'I' :'I\n' + ' '.repeat(i)
+  }
+    return s;
+}
+```
