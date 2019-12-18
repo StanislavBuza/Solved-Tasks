@@ -122,3 +122,19 @@ for (let i = 0;i < a.length; i++){
   return sum;
 }
 ```
+####CodeWars Task : Remove duplicates from list
+```javascript
+function distinct(a) {
+
+  let b ={};
+  let res = [];
+  for (let i = 0; i < a.length; i++){
+  if(!b[a[i]]){
+  res.push(a[i]);
+  b[a[i]] = 1;
+  
+  }
+  }
+  return res;
+}
+```
