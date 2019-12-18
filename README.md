@@ -111,3 +111,14 @@ if (l === w + 1) return "Pls go away and stop eating my sheep";
 return `Oi! Sheep number ${l - 1 - w}! You are about to be eaten by a wolf!`;
 }
 ```
+####CodeWars Task : Sum ALL the arrays!
+```javascript
+function arraySum(arr) {
+let a = arr.toString().split(',');
+let sum = 0;
+for (let i = 0;i < a.length; i++){
+  sum+= Number.isNaN(Number (a[i])) ? 0 : Number (a[i]);
+  }
+  return sum;
+}
+```
