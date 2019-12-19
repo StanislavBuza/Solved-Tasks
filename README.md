@@ -138,3 +138,17 @@ function distinct(a) {
   return res;
 }
 ```
+####CodeWars Task : sPoNgEbOb MeMe
+```javascript
+function spongeMeme(sen) {
+  let bob = '';
+  for (let i = 0; i < sen.length; i++){
+  if (i % 2 !== 0){
+   bob += sen[i].toLowerCase();
+   } else {
+   bob += sen[i].toUpperCase();
+   }
+  }
+  return bob;
+}
+```
