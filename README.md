@@ -152,3 +152,9 @@ function spongeMeme(sen) {
   return bob;
 }
 ```
+####CodeWars Task : Area of a Square
+```javascript
+function squareArea(A){
+  return Math.round(Math.pow( (A / (2 * Math.PI)) * 4   , 2 ) * 100 ) / 100;
+}
+```
