@@ -111,7 +111,7 @@ if (l === w + 1) return "Pls go away and stop eating my sheep";
 return `Oi! Sheep number ${l - 1 - w}! You are about to be eaten by a wolf!`;
 }
 ```
-####CodeWars Task : Sum ALL the arrays!
+#### CodeWars Task : Sum ALL the arrays!
 ```javascript
 function arraySum(arr) {
 let a = arr.toString().split(',');
@@ -122,7 +122,7 @@ for (let i = 0;i < a.length; i++){
   return sum;
 }
 ```
-####CodeWars Task : Remove duplicates from list
+#### CodeWars Task : Remove duplicates from list
 ```javascript
 function distinct(a) {
 
@@ -138,7 +138,7 @@ function distinct(a) {
   return res;
 }
 ```
-####CodeWars Task : sPoNgEbOb MeMe
+#### CodeWars Task : sPoNgEbOb MeMe
 ```javascript
 function spongeMeme(sen) {
   let bob = '';
@@ -152,13 +152,13 @@ function spongeMeme(sen) {
   return bob;
 }
 ```
-####CodeWars Task : Area of a Square
+#### CodeWars Task : Area of a Square
 ```javascript
 function squareArea(A){
   return Math.round(Math.pow( (A / (2 * Math.PI)) * 4   , 2 ) * 100 ) / 100;
 }
 ```
-####CodeWars Task : Calculate BMI
+#### CodeWars Task : Calculate BMI
 ```javascript
 function bmi(weight, height) {
   let bmi = weight / (height ** 2);
@@ -174,7 +174,7 @@ function bmi(weight, height) {
   }
 }
 ```
-####CodeWars Task : What's the real floor?
+#### CodeWars Task : What's the real floor?
 ```javascript
 function getRealFloor(n) {
  console.log(n)
@@ -187,7 +187,7 @@ function getRealFloor(n) {
   }
 }
 ```
-####CodeWars Task : Calculate Two People's Individual Ages
+#### CodeWars Task : Calculate Two People's Individual Ages
 ```javascript
 function getAges(s,d){
   console.log(s,d)
