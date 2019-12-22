@@ -187,3 +187,15 @@ function getRealFloor(n) {
   }
 }
 ```
+####CodeWars Task : Calculate Two People's Individual Ages
+```javascript
+function getAges(s,d){
+  console.log(s,d)
+  if (s < 0 || d < 0 || d > s){
+  return null;
+  } else {
+  return [(s + d) / 2 , ((s + d) / 2) - d] ;
+  }
+  
+}
+```
