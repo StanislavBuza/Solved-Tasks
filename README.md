@@ -220,3 +220,19 @@ function oddOrEven(array) {
      return sum % 2 ? 'odd' : 'even';
 }
 ```
+#### CodeWars Task : Difference Of Squares
+```javascript
+function differenceOfSquares(n){
+  let sum = 0;
+  let sumSquares = 0;
+  while (n > 0){
+    sum += n;
+    sumSquares += Math.pow(n , 2);
+    n--;
+  }
+  let squareSum = Math.pow(sum, 2)
+  
+  
+  return squareSum - sumSquares;
+}
+```
