@@ -247,3 +247,20 @@ function largestPower(n){
   return k-1;
 }
 ```
+#### CodeWars Task : Sum of the first nth term of Series
+```javascript
+function SeriesSum(n){
+  let result = 1;
+  let sum = 1;
+ if (n === 0 || n ===1 ){
+   return n.toFixed(2); 
+   } else {
+     for (i = 1; i < n; i++){
+       sum +=3;
+       result +=(1/sum)
+       }
+    }
+    
+   return result.toFixed(2)
+}
+```
