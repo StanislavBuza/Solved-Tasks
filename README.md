@@ -281,3 +281,21 @@ function getSum( a,b ){
   return sum;
 }
 ```
+#### CodeWars Task : Power
+```javascript
+function numberToPower(n, p){
+  console.log(n,p)
+  let iGotPower = 1;
+  let number = p;
+  if (p == 0){
+   return iGotPower;
+  } else {
+    do {
+      iGotPower *= n;
+    number--;
+    }  
+  while (number > 0);
+  }
+  return iGotPower;
+}
+```
