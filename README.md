@@ -264,3 +264,20 @@ function SeriesSum(n){
    return result.toFixed(2)
 }
 ```
+#### CodeWars Task : Beginner Series #3 Sum of Numbers
+```javascript
+function getSum( a,b ){
+ console.log(a, b)
+ let sum = 0;
+  if (a < b){
+    for (let i = a; i <= b; i++){
+      sum += i;   
+    }
+  } else {
+    for (let i = b; i <= a; i++){
+      sum += i;   
+    }
+  }
+  return sum;
+}
+```
