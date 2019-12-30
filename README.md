@@ -314,3 +314,18 @@ var FilterString = function(value) {
   return +string;
 }
 ```
+#### CodeWars Task : Squares sequence
+```javascript
+function squares(x, n) {
+
+ let arr = [];
+  let mult = x;
+  for (let i = 0;i < n; i++ ){
+    arr[i] = mult;
+    mult *= mult;
+   
+    }
+
+return arr;
+}
+```
