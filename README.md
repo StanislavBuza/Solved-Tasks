@@ -299,3 +299,18 @@ function numberToPower(n, p){
   return iGotPower;
 }
 ```
+#### CodeWars Task : Filter the number
+```javascript
+var FilterString = function(value) {
+  let string = "";
+  for (i = 0;i < value.length; i++){
+    if (isNaN(value[i])){
+      continue;
+      
+    } else {
+      string += value[i];
+    }
+  }
+  return +string;
+}
+```
