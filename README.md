@@ -329,3 +329,14 @@ function squares(x, n) {
 return arr;
 }
 ```
+#### CodeWars Task : Square Every Digit
+```javascript
+function squareDigits(num){
+  let str = num + "";
+  let strNum = "";
+  for (let i = 0 ; i < str.length; i++){
+    strNum += Math.pow(str[i], 2);
+  }
+  return +strNum;
+}
+```
