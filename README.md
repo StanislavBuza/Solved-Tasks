@@ -340,3 +340,14 @@ function squareDigits(num){
   return +strNum;
 }
 ```
+#### CodeWars Task : Find the next perfect square!
+```javascript
+function findNextSquare(sq) {
+  let notPerfect = -1;
+  if (Math.sqrt(sq) % 1 == 0){
+    return Math.pow(Math.sqrt(sq) + 1, 2);
+  } else {
+  return notPerfect;
+  }
+}
+```
