@@ -351,3 +351,13 @@ function findNextSquare(sq) {
   }
 }
 ```
+#### CodeWars Task : The wheat/rice and chessboard problem
+```javascript
+function squaresNeeded(g){
+  if (g == 0){
+  return 0;
+  } else {
+    return 1 + Math.trunc(Math.log2(g));
+  }
+}
+```
