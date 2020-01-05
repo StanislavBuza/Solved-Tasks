@@ -361,3 +361,23 @@ function squaresNeeded(g){
   }
 }
 ```
+#### CodeWars Task : Tortoise racing
+```javascript
+function race(v1, v2, g) {
+   let hours;
+   let distance;
+   let minutes;
+   let seconds;
+  if (v1 >= v2){
+    return null;
+  } else {
+    distance = (v2 * g) / (v2 -v1);
+  }
+  hours = distance / v2
+  minutes = (hours - Math.trunc(hours)) * 60
+  seconds = ((minutes - Math.trunc(minutes))).toFixed(3) * 60
+  
+  return [Math.trunc(hours), Math.trunc(minutes), Math.trunc(seconds)]
+  
+}
+```
