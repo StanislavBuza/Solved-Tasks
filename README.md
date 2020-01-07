@@ -381,3 +381,13 @@ function race(v1, v2, g) {
   
 }
 ```
+#### CodeWars Task : Lario and Muigi Pipe Problem
+```javascript
+function pipeFix(numbers){
+let array = [];
+for (let i = Math.min(...numbers) ;i <= Math.max(...numbers); i++){
+  array.push(i);
+  }
+  return array;
+}
+```
