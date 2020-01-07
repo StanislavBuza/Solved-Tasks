@@ -391,16 +391,3 @@ for (let i = Math.min(...numbers) ;i <= Math.max(...numbers); i++){
   return array;
 }
 ```
-#### CodeWars Task : Calculate Price Excluding VAT
-```javascript
-function excludingVatPrice(price){
-  let originalPrice = price - ((price * 15) / 115);
-  
- if (price == null){
-    return -1;
-  } else {
-  return +originalPrice.toFixed(2);
-  }
-  
-}
-```
