@@ -418,3 +418,17 @@ const arrCheck = value =>{
   }  
 }
 ```
+
+#### CodeWars Task : A Needle in the Haystack
+```javascript
+function findNeedle(haystack) {
+  let position = 0;
+  for (let i = 0; i < haystack.length ; i++){
+    if (haystack[i] === 'needle' ){
+      position = i;
+      break;
+    }
+  }
+  return `found the needle at position ${position}`;
+}
+```
