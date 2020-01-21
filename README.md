@@ -404,3 +404,17 @@ function excludingVatPrice(price){
   
 }
 ```
+
+#### CodeWars Task : Is every value in the array an array?
+```javascript
+const arrCheck = value =>{
+  if (value.length == 0) return true;
+  for (let i = 0; i < value.length; i++){
+    if ({}.toString.call(value[i]) != "[object Array]" ){
+      return false;
+    } else if ({}.toString.call(value[value.length - 1]) == "[object Array]" ){
+      return true;
+    }
+  }  
+}
+```
