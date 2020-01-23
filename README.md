@@ -444,3 +444,18 @@ function positiveSum(arr) {
   return sumPositive;
 }
 ```
+#### CodeWars Task : Divide and Conquer
+```javascript
+function divCon(x){
+  let sumNumbers = 0;
+  let sumStrings = 0;
+  for (let i = 0; i < x.length; i++){
+    if (typeof x[i] == 'string'){
+      sumStrings += +x[i]; 
+    } else {
+      sumNumbers += x[i];
+    }
+  }
+  return sumNumbers - sumStrings;
+}
+```
