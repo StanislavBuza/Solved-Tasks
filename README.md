@@ -432,3 +432,15 @@ function findNeedle(haystack) {
   return `found the needle at position ${position}`;
 }
 ```
+#### CodeWars Task : Sum of positive
+```javascript
+function positiveSum(arr) {
+  let sumPositive = 0;
+  for (let i = 0; i < arr.length; i++){
+    if (arr[i] > 0){
+      sumPositive += arr[i];
+    }
+  }
+  return sumPositive;
+}
+```
