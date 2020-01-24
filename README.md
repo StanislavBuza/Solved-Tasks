@@ -459,3 +459,20 @@ function divCon(x){
   return sumNumbers - sumStrings;
 }
 ```
+#### CodeWars Task : Sum of Odd Cubed Numbers
+```javascript
+function cubeOdd(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i ++){
+    if (typeof arr[i] == 'string'){
+      return undefined;
+      
+    } else if (arr[i] % 2 !== 0) {
+      sum += Math.pow(arr[i], 3);  
+    }
+  }
+
+  return sum;
+}
+```
+
