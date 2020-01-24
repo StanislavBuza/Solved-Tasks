@@ -475,4 +475,13 @@ function cubeOdd(arr) {
   return sum;
 }
 ```
+#### CodeWars Task : Sum of two lowest positive integers
+```javascript
+function sumTwoSmallestNumbers(numbers) {  
+  let minOne = Math.min(...numbers);
+  numbers.splice(numbers.indexOf(Math.min(...numbers)),1);
+  let minTwo = Math.min(...numbers);
+  return minOne + minTwo;
+}
+```
 
