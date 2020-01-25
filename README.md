@@ -484,4 +484,14 @@ function sumTwoSmallestNumbers(numbers) {
   return minOne + minTwo;
 }
 ```
+#### CodeWars Task : Remove the minimum
+```javascript
+function removeSmallest(numbers) {
+  let myArray = [...numbers];
+  myArray.splice(myArray.indexOf(Math.min(...myArray)),1)
+  console.log(numbers);
+ return myArray;
+
+}
+```
 
