@@ -511,4 +511,23 @@ function sumArray(array) {
 }
 
 ```
+#### CodeWars Task : Find the divisors!
+```javascript
+function divisors(integer) {
+  let count = 0;
+  let arr = [];
+ console.log(integer)
+  for (let i = 2; i < integer; i++){
+    if (integer % i == 0){
+      arr.push(i);
+      count++;
+    }
+  }
+  if (count == 0){
+    return `${integer} is prime`
+  } else {
+    return arr;
+  }
+}
+```
 
