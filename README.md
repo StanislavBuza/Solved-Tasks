@@ -494,4 +494,21 @@ function removeSmallest(numbers) {
 
 }
 ```
+#### CodeWars Task : Sum without highest and lowest number
+```javascript
+function sumArray(array) {
+  let sum = 0;
+  if (array == null || array.length < 3 ){
+    return 0;
+  } else {   
+    array.splice(array.indexOf(Math.min(...array)),1);
+    array.splice(array.indexOf(Math.max(...array)),1);
+    for (let i = 0 ; i < array.length;i++){
+    sum += array[i];
+    }
+  }  
+  return sum;
+}
+
+```
 
