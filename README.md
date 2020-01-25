@@ -530,4 +530,12 @@ function divisors(integer) {
   }
 }
 ```
+#### CodeWars Task : JavaScript Array Filter
+```javascript
+function getEvenNumbers(numbersArray){
+ return numbersArray.filter(function(numbers){
+   return numbers % 2 == 0;
+ });
+}
+```
 
