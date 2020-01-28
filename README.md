@@ -538,4 +538,11 @@ function getEvenNumbers(numbersArray){
  });
 }
 ```
+#### CodeWars Task : Find how many times did a team from a given country win the Champions League?
+```javascript
+function countWins(winnerList, country) {
+  let myList = winnerList.filter(el => el.country == country);
+  return myList.length;
+}
+```
 
