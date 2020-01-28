@@ -545,4 +545,10 @@ function countWins(winnerList, country) {
   return myList.length;
 }
 ```
+#### CodeWars Task : filterEvenLengthWords
+```javascript
+function filterEvenLengthWords(words) {
+  return words.filter(word => word.length % 2 == 0);
+}
+```
 
