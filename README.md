@@ -551,4 +551,15 @@ function filterEvenLengthWords(words) {
   return words.filter(word => word.length % 2 == 0);
 }
 ```
-
+#### CodeWars Task : Santa's Naughty List
+```javascript
+function findChildren(santasList, children) {
+  let myList = [];
+  for (let i = 0; i < children.length; i++){
+    if (santasList.includes(children[i])){
+      myList.push(children[i]);
+    } 
+  }
+ return myList.filter((el,i) => myList.indexOf(el) === i).sort();
+}
+```
