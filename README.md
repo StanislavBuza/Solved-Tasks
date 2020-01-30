@@ -570,3 +570,9 @@ function array_diff(a, b) {
  return a.filter( ( el ) => !b.includes( el ) );
 }
 ```
+#### CodeWars Task : Find Duplicates
+```javascript
+function duplicates(arr) {
+  return arr.filter((el, i) => i !== arr.indexOf(el) && i === arr.lastIndexOf(el));
+}
+```
