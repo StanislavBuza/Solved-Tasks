@@ -563,3 +563,10 @@ function findChildren(santasList, children) {
  return myList.filter((el,i) => myList.indexOf(el) === i).sort();
 }
 ```
+#### CodeWars Task : Array.diff
+```javascript
+function array_diff(a, b) {
+ console.log(a, b)
+ return a.filter( ( el ) => !b.includes( el ) );
+}
+```
