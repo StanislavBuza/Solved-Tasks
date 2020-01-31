@@ -576,3 +576,9 @@ function duplicates(arr) {
   return arr.filter((el, i) => i !== arr.indexOf(el) && i === arr.lastIndexOf(el));
 }
 ```
+#### CodeWars Task : Train to remove duplicates from an array with filter()
+```javascript
+function unique(arr) {
+  return arr.filter((el, i) => i === arr.indexOf(el));
+}
+```
