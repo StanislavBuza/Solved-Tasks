@@ -589,3 +589,9 @@ function twoOldestAges(ages){
   return [ages[ages.length - 2], ages[ages.length - 1] ]; 
 }
 ```
+#### CodeWars Task : String Templates - Bug Fixing #5
+```javascript
+function buildString(...template){
+  return `I like ${template.join(', ')}!`;
+}
+```
