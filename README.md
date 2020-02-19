@@ -595,3 +595,20 @@ function buildString(...template){
   return `I like ${template.join(', ')}!`;
 }
 ```
+#### CodeWars Task : Regex validate PIN code
+```javascript
+function validatePIN (pin) {
+    for ( let i = 0;i < pin.length; i++){
+      if (pin.codePointAt(i) > 47 && pin.codePointAt(i) < 58 ){
+        continue;
+      } else {
+        return false;
+      }
+    }
+  if (pin.length == 4 || pin.length == 6){
+    return true;
+  } else {
+    return false;
+  } 
+}
+```
