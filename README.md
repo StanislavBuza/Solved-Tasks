@@ -623,3 +623,17 @@ function switcher(x){
  return string;
 }
 ```
+#### CodeWars Task : Unique In Order
+```javascript
+var uniqueInOrder=function(iterable){
+
+  let myArray = [];
+  for (let i = 0;i < iterable.length;i++){
+    if (myArray[myArray.length -1]  !== iterable[i] ){
+      myArray.push(iterable[i]);
+    }  
+  }
+  console.log(iterable,myArray)
+  return myArray;
+}
+```
