@@ -637,3 +637,14 @@ var uniqueInOrder=function(iterable){
   return myArray;
 }
 ```
+#### CodeWars Task : Thinking & Testing : Something capitalized
+```javascript
+function testit(s){
+  if (s.length == 0)  return s; 
+  let testSomething = s.split(" ")
+  for (let i = 0; i < testSomething.length ;i++){
+    testSomething[i] = testSomething[i].slice(0,-1) + testSomething[i][testSomething[i].length -1].toUpperCase(); 
+  }
+  return testSomething.join(" ");
+}
+```
