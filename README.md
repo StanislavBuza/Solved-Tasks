@@ -670,3 +670,17 @@ var capitals = function (word) {
   return arr;
 };
 ```
+#### CodeWars Task : Don't give me five!
+```javascript
+function dontGiveMeFive(start, end) {
+  var noFive = 0;
+  for (i = start; i <= end; i++) {
+    if (i.toString().includes("5")){
+      continue;
+    } else {
+      noFive++;
+    }
+  }
+  return noFive;
+}
+```
