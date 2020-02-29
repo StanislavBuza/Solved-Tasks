@@ -684,3 +684,9 @@ function dontGiveMeFive(start, end) {
   return noFive;
 }
 ```
+#### CodeWars Task : String ends with?
+```javascript
+function solution(str, ending){
+  return str.endsWith(ending);
+}
+```
