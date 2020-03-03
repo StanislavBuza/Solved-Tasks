@@ -699,3 +699,10 @@ function tailSwap(arr) {
   return myArr;
 }
 ```
+#### CodeWars Task : Credit Card Mask
+```javascript
+function maskify(cc) {
+  if (cc.length < 5) return cc;
+  return "#".repeat(cc.length -4) + cc.slice(-4);
+}
+```
