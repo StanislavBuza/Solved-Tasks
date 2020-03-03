@@ -690,3 +690,12 @@ function solution(str, ending){
   return str.endsWith(ending);
 }
 ```
+#### CodeWars Task : Tail Swap
+```javascript
+function tailSwap(arr) {
+  let myArr = [];
+  myArr[0] = arr[0].slice(0,arr[0].indexOf(':')) + arr[1].slice(arr[1].indexOf(':'));
+  myArr[1] = arr[1].slice(0,arr[1].indexOf(':')) + arr[0].slice(arr[0].indexOf(':'));
+  return myArr;
+}
+```
