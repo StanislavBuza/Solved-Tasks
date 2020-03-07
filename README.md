@@ -728,3 +728,10 @@ function descendingOrder(n){
   return +m;
 }
 ```
+#### CodeWars Task : Highest and Lowest
+```javascript
+function highAndLow(numbers){
+  let num = numbers.split(" ").sort((a,b) => b - a);
+  return num[0] + " " + num[num.length -1]
+}
+```
