@@ -721,3 +721,10 @@ function findLongest(str){
     return longest;
 }
 ```
+#### CodeWars Task : Descending Order
+```javascript
+function descendingOrder(n){
+  let m = n.toString().split("").sort((a,b) => b - a).join("");
+  return +m;
+}
+```
