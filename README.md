@@ -752,3 +752,16 @@ function determineTime(durations){
   return hours < 24;
 }
 ```
+#### CodeWars Task : Every possible sum of two digits
+```javascript
+function digits(num){
+  let arr = num.toString().split("");
+  let myArr = [];
+  for (let i = 0; i < arr.length ; i++){
+    for(let k = 1+i; k < arr.length; k++){
+      myArr.push(+arr[i]+ +arr[k]);
+    }
+  }
+  return myArr;
+}
+```
