@@ -735,3 +735,20 @@ function highAndLow(numbers){
   return num[0] + " " + num[num.length -1]
 }
 ```
+#### CodeWars Task : Can Santa save Christmas?
+```javascript
+function determineTime(durations){
+  if (durations.length == 0) return true;
+  let sec = 0;
+  let min = 0;
+  let hours = 0;
+  for (let i = 0; i < durations.length;i++){
+    sec += + (durations[i][6] + durations[i][7]);
+    min += + (durations[i][3] + durations[i][4]);
+    hours += + (durations[i][0] + durations[i][1]);
+  }
+  min += Math.trunc(sec / 60);
+  hours += Math.trunc(sec / 60);
+  return hours < 24;
+}
+```
