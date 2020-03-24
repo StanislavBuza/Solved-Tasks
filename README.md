@@ -801,7 +801,7 @@ function greet(language) {
   return language in greeting ? greeting[language] : greeting.english;
 }
 ```
-#### Make a function that does arithmetic!
+#### CodeWars Task : Make a function that does arithmetic!
 ```javascript
 function arithmetic(a, b, operator){
   switch(operator) {
