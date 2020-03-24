@@ -801,3 +801,38 @@ function greet(language) {
   return language in greeting ? greeting[language] : greeting.english;
 }
 ```
+#### Make a function that does arithmetic!
+```javascript
+function arithmetic(a, b, operator){
+  switch(operator) {
+    case 'add':  
+    return a + b;
+    break;
+
+    case 'subtract':
+    return a - b;
+    break;
+    case 'multiply':
+    return a * b;
+    break;
+    case 'divide':
+    return a / b;
+    break;
+  }
+}
+```
+#### CodeWars Task : makeBackronym
+```javascript
+let makeBackronym = function(string){
+  let arr = string.toUpperCase().split("");
+  let phrase = "";
+  for (let i = 0; i < arr.length ; i++){
+    if (i == arr.length - 1){
+      phrase += dict[arr[i]];
+    } else {
+      phrase += dict[arr[i]] + " ";
+    }
+  }
+   return phrase;
+};
+```
