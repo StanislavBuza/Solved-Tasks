@@ -850,3 +850,10 @@ function checkThreeAndTwo(array) {
   return ((countA == 3 || countB == 3 || countC == 3) && (countA == 2 || countB == 2 || countC == 2));
 }
 ```
+#### CodeWars Task : Job Matching #1
+```javascript
+function match(candidate, job) {
+  if (candidate.minSalary === undefined || job.maxSalary === undefined ) throw "Error";
+  return candidate.minSalary - candidate.minSalary / 10 <= job.maxSalary;
+}
+```
