@@ -863,3 +863,14 @@ for ( let i = 0; i < questions.length ; i++){
   questions[i].usersAnswer = null;
 } 
 ```
+#### CodeWars Task : Numbers to Objects
+```javascript
+function numObj(s){
+  let obj = [];
+  for( let i = 0; i < s.length; i++){
+    obj[i] = {};
+    obj[i][s[i]] = String.fromCharCode(s[i]);
+  }
+  return obj;
+}
+```
