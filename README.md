@@ -857,3 +857,9 @@ function match(candidate, job) {
   return candidate.minSalary - candidate.minSalary / 10 <= job.maxSalary;
 }
 ```
+#### CodeWars Task : Add property to every object in array
+```
+for ( let i = 0; i < questions.length ; i++){
+  questions[i].usersAnswer = null;
+} 
+```
