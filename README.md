@@ -888,3 +888,20 @@ function countLanguages(list) {
   return answer;
 }
 ```
+#### CodeWars Task : The Office I - Outed
+```javascript
+function outed(meet, boss){
+  let sumMood = 0;
+  let count = 0;
+  for (let e in meet){
+    if(e === boss ){
+      sumMood += meet[e] * 2
+      count++
+    } else {
+      sumMood += meet[e];
+      count++;
+    }  
+  }
+ return (sumMood / count) <= 5 ? 'Get Out Now!' : 'Nice Work Champ!';
+}
+```
