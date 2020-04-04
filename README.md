@@ -905,3 +905,17 @@ function outed(meet, boss){
  return (sumMood / count) <= 5 ? 'Get Out Now!' : 'Nice Work Champ!';
 }
 ```
+#### CodeWars Task : How many days are we represented in a foreign country?
+ ```javascript
+function daysRepresented(trips){
+  let days = [];
+  for ( let i = 0; i < trips.length; i++){
+    for (let k = trips[i][0]; k <= trips[i][1]; k++){
+      if (!days.includes(k)){
+        days.push(k);
+      }
+    }
+  }
+  return days.length;
+}
+```
