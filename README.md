@@ -919,3 +919,21 @@ function daysRepresented(trips){
   return days.length;
 }
 ```
+#### CodeWars Task : What is my name score? #1
+```javascript
+function nameScore(name){
+  let score = {};
+  score[name] = 0
+  let arr = name.toUpperCase().split("");
+  for (let i = 0; i < arr.length; i++){
+    for ( let key in alpha){
+      if (key.includes(arr[i])){
+        score[name] += alpha[key];
+        console.log(name)
+      }
+    }
+  }
+  
+  return score;
+}
+```
