@@ -958,3 +958,24 @@ function permuteAPalindrome (input) {
   return countOdd <= 1;  
 }
 ```
+#### CodeWars Task : Most valuable character
+```javascript
+function solve(st) {
+  let obj = {};
+  for (let i = 0; i < st.length; i++) {
+    obj[st[i]] = st.lastIndexOf(st[i]) - st.indexOf(st[i]);
+  }
+  let arr = [];
+  for (let key in obj){
+    arr.push(obj[key]);
+  }
+  
+  let value = Math.max(...arr);
+  let arrWithEqualValue = [];
+  for (let key in obj){
+    if (obj[key] === value) arrWithEqualValue.push(key);
+  }
+  arrWithEqualValue.sort();
+  return arrWithEqualValue[0];
+}
+```
