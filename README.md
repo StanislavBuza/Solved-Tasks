@@ -979,3 +979,32 @@ function solve(st) {
   return arrWithEqualValue[0];
 }
 ```
+#### CodeWars Task : The Office II - Boredom Score
+```javascript
+function boredom(staff){
+  let staffScores = {
+    accounts : 1,
+    finance:  2,
+    canteen : 10,
+    regulation : 3,
+    trading : 6,
+    change : 6,
+    IS : 8,
+    retail : 5,
+    cleaning : 4,
+   'pissing about' : 25,
+  };
+  let score = 0;
+  for (let key in staffScores) {
+    for (let keys in staff){
+    if (key === staff[keys]) score += staffScores[key]; 
+  }
+  }
+  if (score <= 80) {
+    return 'kill me now';
+  } else if (score < 100 && score > 80) {
+    return 'i can handle this';
+  } else {
+    return 'party time!!';}
+}
+```
