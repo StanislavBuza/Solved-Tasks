@@ -1030,3 +1030,24 @@ for ( let i = 0; i < str.length ; i++){
   return (a === 0);
 }
 ```
+#### CodeWars Task : String Reordering
+```javascript
+function sentence(List) {
+  let arr = []
+  let str = "";
+
+  for (let i = 0; i < List.length; i++){
+    arr = arr.concat(Object.keys(List[i]))
+  }
+  arr.sort((a, b) => a-b)
+
+  for (let k = 0; k < List.length; k++){
+    
+    for(let x = 0; x < List.length; x++){
+      if (arr[k] in List[x])
+      { str += " " + List[x][arr[k]] }
+    }
+  }  
+  return str.trim();
+}
+```
