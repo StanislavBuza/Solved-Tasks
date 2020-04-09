@@ -1018,3 +1018,15 @@ function likes(names) {
   if (names.length > 3) return `${names[0]}, ${names[1]} and ${names.length - 2} others like this`;
 }
 ```
+#### CodeWars Task : Valid Parentheses
+```javascript
+function validParentheses(str){
+let a = 0;
+for ( let i = 0; i < str.length ; i++){
+  if (str[i] === '(') a = a + 1;
+  else if (str[i] === ')') a = a - 1;
+  if (a < 0) return false;
+}
+  return (a === 0);
+}
+```
