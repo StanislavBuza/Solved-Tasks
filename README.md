@@ -1051,3 +1051,12 @@ function sentence(List) {
   return str.trim();
 }
 ```
+#### CodeWars Task : Print a Rectangle Using Asterisks
+```javascript
+function getRectangleString(w, h) {
+  let rn = '\r\n';
+  let tb ='*'.repeat(w) + rn;
+  let center = (w > 1) ? ('*' + ' '.repeat(w - 2) + '*' + rn).repeat(h-2) : '';
+  return h > 1 ? (tb + center + tb) :  tb.repeat(h);
+}
+```
