@@ -1078,3 +1078,9 @@ function arraysSimilar(arr1, arr2) {
 ```javascript
 function avg(a){ return ( a.reduce((a, b) => a + b ) )/ a.length }
 ```
+#### CodeWars Task : Get the mean of an array
+```javascript
+function getAverage(marks){
+  return Math.floor(marks.reduce((a,b) => a + b) / marks.length)
+}
+```
