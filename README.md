@@ -1074,3 +1074,7 @@ function arraysSimilar(arr1, arr2) {
   return true;
 }
 ```
+#### CodeWars Task : Write shortest function to calculate Average number of Array
+```javascript
+function avg(a){ return ( a.reduce((a, b) => a + b ) )/ a.length }
+```
