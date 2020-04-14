@@ -1084,3 +1084,18 @@ function getAverage(marks){
   return Math.floor(marks.reduce((a,b) => a + b) / marks.length)
 }
 ```
+#### CodeWars Task : Find the missing element between two arrays
+```javascript
+function findMissing(arr1, arr2) {
+  let index;
+  for(let i = 0; i < arr1.length; i++){
+    index = arr2.indexOf(arr1[i]);
+    if(index > -1){
+      arr2.splice(index,1);
+    } else {
+      return arr1[i];
+    }
+  }
+
+}
+```
