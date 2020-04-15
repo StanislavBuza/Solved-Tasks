@@ -1105,3 +1105,10 @@ function feast(beast, dish) {
   return (beast[0] === dish[0] && beast[beast.length - 1] === dish[dish.length - 1] ) 
 }
 ```
+#### CodeWars Task : Find out whether the shape is a cube
+```javascript
+var cubeChecker = function(volume, side){
+ if (side === 0 || side < 0) return false;
+  return side ** 3 === volume;
+};
+```
