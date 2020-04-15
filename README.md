@@ -1122,3 +1122,9 @@ function multiTable(n) {
   return res;
 }
 ```
+#### CodeWars Task : Get Nth Even Number
+```javascript
+function nthEven(n){
+  return n * 2 - 2;
+}
+```
