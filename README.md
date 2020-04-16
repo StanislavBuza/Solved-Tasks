@@ -1128,3 +1128,9 @@ function nthEven(n){
   return n * 2 - 2;
 }
 ```
+#### CodeWars Task : Enumerable Magic #2 - True for Any?
+```javascript
+function any(arr, fun){
+  return arr.some(fun);
+}
+```
