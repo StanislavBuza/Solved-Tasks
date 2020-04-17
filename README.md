@@ -1134,3 +1134,9 @@ function any(arr, fun){
   return arr.some(fun);
 }
 ```
+#### CodeWars Task : Grasshopper - Personalized Message
+```javascript
+function greet (name, owner) {
+  return name === owner ? 'Hello boss' : 'Hello guest';
+}
+```
