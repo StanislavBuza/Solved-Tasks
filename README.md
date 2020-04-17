@@ -1140,3 +1140,12 @@ function greet (name, owner) {
   return name === owner ? 'Hello boss' : 'Hello guest';
 }
 ```
+#### CodeWars Task : Clean up after your dog
+```javascript
+function crap(x, bags, cap){
+  const str = x.toString();
+  if(str.includes('D')) return 'Dog!!'
+  const crapCount = str.split('@').length - 1;
+  return bags * cap >= crapCount ? 'Clean' : 'Cr@p';
+}
+```
