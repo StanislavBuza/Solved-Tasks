@@ -1155,3 +1155,9 @@ function take(arr, n) {
   return arr.slice(0, n);
 }
 ```
+#### CodeWars Task : Will there be enough space?
+```javascript
+function enough(cap, on, wait) {
+  return cap >= (on + wait) ? 0 : Math.abs(cap-on-wait);
+}
+```
