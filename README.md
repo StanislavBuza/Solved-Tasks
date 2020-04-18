@@ -1149,3 +1149,9 @@ function crap(x, bags, cap){
   return bags * cap >= crapCount ? 'Clean' : 'Cr@p';
 }
 ```
+#### CodeWars Task : Enumerable Magic #25 - Take the First N Elements
+```javascript
+function take(arr, n) {
+  return arr.slice(0, n);
+}
+```
