@@ -1161,3 +1161,9 @@ function enough(cap, on, wait) {
   return cap >= (on + wait) ? 0 : Math.abs(cap-on-wait);
 }
 ```
+#### CodeWars Task : For Twins: 1. Types
+```javascript
+function typeValidation(v, t) {
+  return typeof(v) === t;
+}
+```
