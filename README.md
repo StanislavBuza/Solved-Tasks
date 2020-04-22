@@ -1167,3 +1167,9 @@ function typeValidation(v, t) {
   return typeof(v) === t;
 }
 ```
+#### CodeWars Task : Beginner Series #1 School Paperwork
+```javascript
+function paperwork(n, m) {
+  return n < 0 || m < 0 ? 0 : n * m;
+}
+```
