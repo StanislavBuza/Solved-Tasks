@@ -1174,8 +1174,16 @@ function paperwork(n, m) {
 }
 ```
 #### CodeWars Task : Beginner Series #2 Clock
-````javascript
+```javascript
 function past(h, m, s){
   return  h * 3600000 + m * 60000 + s * 1000;
 }
-````
+```
+#### CodeWars Task : Filter out the geese
+```javascript
+function gooseFilter (birds) {
+  const geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+  return birds.filter(el => !geese.includes(el));
+  
+};
+```
