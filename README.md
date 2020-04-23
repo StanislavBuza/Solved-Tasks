@@ -1173,3 +1173,9 @@ function paperwork(n, m) {
   return n < 0 || m < 0 ? 0 : n * m;
 }
 ```
+#### CodeWars Task : Beginner Series #2 Clock
+````javascript
+function past(h, m, s){
+  return  h * 3600000 + m * 60000 + s * 1000;
+}
+````
