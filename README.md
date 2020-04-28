@@ -1187,3 +1187,14 @@ function gooseFilter (birds) {
   
 };
 ```
+#### CodeWars Task : Reverse every other word in the string
+```javascript
+function reverse(str){
+  if (str[0] === ' ') return '';
+  let newStr = str.split(' ');
+    for (let i = 0; i < newStr.length ; i++){
+      if (i % 2) newStr[i] = newStr[i].split('').reverse().join('');
+    }
+  return newStr.join(' ');
+}
+```
