@@ -1214,3 +1214,9 @@ const rps = (p1, p2) => {
   if(p1 === 'scissors' && p2 === 'rock' ) return getMsg(2);
 };
 ```
+#### CodeWars Task : Is the string uppercase?
+```javascript
+String.prototype.isUpperCase = function() {
+  return this.toUpperCase() == this;
+}
+```
