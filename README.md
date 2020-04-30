@@ -1220,3 +1220,17 @@ String.prototype.isUpperCase = function() {
   return this.toUpperCase() == this;
 }
 ```
+#### CodeWars Task : Flatten and sort an array
+```javascript
+function flattenAndSort(array) {
+  let myArray = [];
+  array.forEach( el => {
+    if(Number.isInteger(el)){
+      myArray.push(el);
+    } else if(Array.isArray(el) && el.length){
+      myArray = [...myArray, ...el];
+    }
+  });
+  return myArray.sort((a, b) => a-b);
+}
+```
