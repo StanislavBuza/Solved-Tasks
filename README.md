@@ -1234,3 +1234,13 @@ function flattenAndSort(array) {
   return myArray.sort((a, b) => a-b);
 }
 ```
+#### CodeWars Task : The Office III - Broken Photocopier
+```javascript
+function broken(x){
+  let res = '';
+  for ( let i = 0; i < x.length; i++){
+    res += x[i] === '0' ? '1' : '0';
+  }
+  return res;
+}
+```
