@@ -1255,3 +1255,16 @@ function reverse(arr) {
    }
 }
 ```
+#### CodeWars Task : The 5 Love Languages
+```javascript
+function loveLanguage(partner,weeks) {
+  let arr = [0 , 0 , 0 , 0 , 0];
+  for (let i = 0, index = 0; i < weeks * 7 ; i++){
+    index === 4 ? index = 0 : index++;
+    if (partner.response(LOVE_LANGUAGES[index]) == "positive"){
+       arr[index]++;
+     } 
+  }
+  return LOVE_LANGUAGES[arr.indexOf(Math.max(...arr))];
+}
+```
