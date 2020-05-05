@@ -1244,3 +1244,14 @@ function broken(x){
   return res;
 }
 ```
+#### CodeWars Task : I need more speed!
+```javascript
+function reverse(arr) { 
+  let count = arr.length
+   for (let i = 0; i < count / 2; i++){
+    let el = arr[i]
+    arr[i] = arr[count - 1 - i]
+    arr[count - 1 - i] = el; 
+   }
+}
+```
