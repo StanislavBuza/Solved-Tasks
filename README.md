@@ -1268,3 +1268,9 @@ function loveLanguage(partner,weeks) {
   return LOVE_LANGUAGES[arr.indexOf(Math.max(...arr))];
 }
 ```
+#### CodeWars Task : The Office IV - Find a Meeting Room
+```javascript
+function meeting(x){
+  return x.indexOf('O') < 0 ? 'None available!' : x.indexOf('O') ;
+}
+```
