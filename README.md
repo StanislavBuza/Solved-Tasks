@@ -1274,3 +1274,52 @@ function meeting(x){
   return x.indexOf('O') < 0 ? 'None available!' : x.indexOf('O') ;
 }
 ```
+#### CodeWars Task : String average
+```javascript
+function averageString(str) {
+
+  if (str.length == 0) return "n/a";
+  
+  let obj = {
+    "zero":0,
+    "one":1,
+    "two":2,
+    "three":3,
+    "four":4,
+    "five":5,
+    "six":6,
+    "seven":7,
+    "eight":8,
+    "nine":9
+  };
+  
+  let newArr = [
+    "zero",
+    "one",
+    "two",
+    "three",
+    "four",
+    "five",
+    "six",
+    "seven",
+    "eight",
+    "nine"
+  ];
+  
+  let arr = str.split(' ');
+  let sum = 0;
+  
+  for(let i = 0; i < arr.length; i++){
+    if(obj[arr[i]] !== undefined) {
+      sum +=obj[arr[i]]
+    } else {
+      return "n/a"
+    }
+  }
+  
+  let avg = Math.floor(sum / arr.length);
+  
+  return newArr[avg];
+  
+}
+```
