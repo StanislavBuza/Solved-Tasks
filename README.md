@@ -1323,3 +1323,9 @@ function averageString(str) {
   
 }
 ```
+#### CodeWars Task : Categorize New Member
+```javascript
+function openOrSenior(data){
+  return data.map((el, i) => el[0] >= 55 && el[1] > 7 ? 'Senior' : 'Open');
+}
+```
