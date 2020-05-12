@@ -1329,3 +1329,21 @@ function openOrSenior(data){
   return data.map((el, i) => el[0] >= 55 && el[1] > 7 ? 'Senior' : 'Open');
 }
 ```
+#### CodeWars Task : Graceful Tipping
+```javascript
+function gracefulTipping(bill) {
+  let billWithTips = Math.ceil(bill * 1.15);
+  if(bill < 10){
+    return billWithTips;
+  } else {
+   let zero = '0';
+   let  divider = +('5' + zero.repeat(billWithTips.toString().length - 2 ));
+   if (billWithTips % divider === 0 ){
+     return billWithTips;
+   } else {
+     let num = Math.trunc(billWithTips / divider);
+     return (num + 1) * divider;
+   }
+  }
+};
+```
