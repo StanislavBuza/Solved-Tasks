@@ -1347,3 +1347,21 @@ function gracefulTipping(bill) {
   }
 };
 ```
+#### CodeWars Task : The Office V - Find a Chair
+```javascript
+function meeting(x, need){
+  if (!need) return 'Game On';
+  let arr = [];
+  let ch = need;
+  for (let i = 0; i < x.length; i++){
+  if(ch > 0){
+    let c = x[i][1] - x[i][0].length;
+    arr.push(c > 0 ? (c > ch ? ch : c) : 0);
+    if (c > 0) ch -= c;
+    } else {
+      return arr
+    }
+  }
+  return ch <= 0 ? arr : 'Not enough!';
+}
+```
