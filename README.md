@@ -1365,3 +1365,9 @@ function meeting(x, need){
   return ch <= 0 ? arr : 'Not enough!';
 }
 ```
+#### CodeWars Task : Ordered Count of Characters
+```javascript
+var orderedCount = function (text) {
+  return [...new Set(text)].map(letter => [letter, text.split(letter).length - 1]);
+}
+```
