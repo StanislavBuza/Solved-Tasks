@@ -1371,3 +1371,25 @@ var orderedCount = function (text) {
   return [...new Set(text)].map(letter => [letter, text.split(letter).length - 1]);
 }
 ```
+#### CodeWars Task : Naughty or Nice?
+```javascript
+function getNiceNames(people){
+  let arr = []
+  for(let i = 0; i < people.length; i++){
+    if(people[i].wasNice){
+      arr.push(people[i].name)
+    }
+  }
+  return arr;
+}
+
+function getNaughtyNames(people){
+  let arr = []
+  for(let i = 0; i < people.length; i++){
+    if(!people[i].wasNice){
+      arr.push(people[i].name)
+    }
+  }
+  return arr;
+}
+```
