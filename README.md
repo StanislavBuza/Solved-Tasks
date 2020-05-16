@@ -1409,3 +1409,15 @@ function rowWeights(array){
   return [sumTeam1, sumTeam2]
 }
 ```
+#### CodeWars Task : Find the middle element
+```javascript
+const gimme = function (arr) {
+  let min = Math.min(...arr);
+  let max = Math.max(...arr);
+  for(let i = 0; i < arr.length;i++){
+    if (arr[i] < max && arr[i] > min){
+      return i;
+    }
+  }
+};
+```
