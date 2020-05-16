@@ -1393,3 +1393,19 @@ function getNaughtyNames(people){
   return arr;
 }
 ```
+#### CodeWars Task : Row Weights
+```javascript
+function rowWeights(array){
+  let sumTeam1 = 0;
+  let sumTeam2 = 0;
+  for (let i = 0; i < array.length; i++){
+    if(i % 2 == 0){
+      sumTeam1 +=array[i]
+    } else {
+      sumTeam2 +=array[i]
+    }
+  }
+  
+  return [sumTeam1, sumTeam2]
+}
+```
