@@ -1421,3 +1421,18 @@ const gimme = function (arr) {
   }
 };
 ```
+#### CodeWars Task : Take a Ten Minute Walk
+```javascript
+function isValidWalk(walk) {
+  if (walk.length != 10) return false;
+  let ns = 0;
+  let we = 0;
+  for (let i = 0; i < 10;i++){
+    if(walk[i] == 'n') ns++;
+    if(walk[i] == 's') ns--;
+    if(walk[i] == 'w') we++;
+    if(walk[i] == 'e') we--;
+  };
+  return ns == 0 && we == 0;
+};
+```
