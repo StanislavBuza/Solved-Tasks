@@ -1450,3 +1450,11 @@ multiplicationTable = function(size) {
   return arr;
 }
 ```
+#### CodeWars Task : Sorted? yes? no? how?
+```javascript
+function isSortedAndHow(array) {
+  let asc = [...array].sort((a,b) => a-b).join('');
+  let des = [...array].sort((a,b) => b-a).join('');
+  return asc == array.join('') ? 'yes, ascending' : des == array.join('') ? 'yes, descending' : 'no';
+};
+```
