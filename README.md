@@ -1458,3 +1458,18 @@ function isSortedAndHow(array) {
   return asc == array.join('') ? 'yes, ascending' : des == array.join('') ? 'yes, descending' : 'no';
 };
 ```
+#### CodeWars Task : Moving Zeros To The End
+```javascript
+const moveZeros = function (arr) {
+  let newArr = [];
+  let totalZeros = 0;
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i] !== 0) newArr.push(arr[i])
+    else totalZeros++;
+  };
+  for(let i = 0; i < totalZeros; i++){
+    newArr.push(0);
+  };
+  return newArr;
+};
+```
