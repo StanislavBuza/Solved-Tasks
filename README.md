@@ -1473,3 +1473,20 @@ const moveZeros = function (arr) {
   return newArr;
 };
 ```
+#### CodeWars Task : Sum of odd numbers
+```javascript
+function rowSumOddNumbers(n) {
+  let firstElement = n * n - (n - 1);
+  let total = 0;
+  let count = 0;
+  while (count < n){
+    if(firstElement % 2 !== 0){
+      total += firstElement;
+    } else {
+      count++; 
+    }
+    firstElement++;
+  };
+  return total;
+};
+```
