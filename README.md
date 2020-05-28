@@ -1490,3 +1490,9 @@ function rowSumOddNumbers(n) {
   return total;
 };
 ```
+#### CodeWars Task : Find variable which breaks strict comparison!
+```javascript
+function findStrangeValue() {
+  return NaN;
+}
+```
