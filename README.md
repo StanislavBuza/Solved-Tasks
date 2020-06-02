@@ -1513,3 +1513,24 @@ function getPlanetName(id){
   return obj[id];
 }
 ```
+#### CodeWars Task : Rock Paper Scissors Lizard Spock
+```javascript
+function rpsls(pl1,pl2){
+  let rules = [
+    "scissors paper",
+    "paper rock",
+    "rock lizard",
+    "lizard spock",
+    "spock scissors",
+    "scissors lizard",
+    "lizard paper",
+    "paper spock",
+    "spock rock",
+    "rock scissors"
+  ]
+ 
+  if (rules.includes(pl1 + ' ' + pl2)) return 'Player 1 Won!';
+  else if(pl1 == pl2) return 'Draw!';
+  else return 'Player 2 Won!';
+}
+```
