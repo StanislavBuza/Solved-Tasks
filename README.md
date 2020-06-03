@@ -1534,3 +1534,19 @@ function rpsls(pl1,pl2){
   else return 'Player 2 Won!';
 }
 ```
+#### CodeWars Task : Find the Capitals
+```javascript
+function capital(capitals){
+  let arr = [];
+  for (let i = 0; i < capitals.length; i++){
+    if (capitals[i].hasOwnProperty('state')) {
+      arr.push(`The capital of ${capitals[i]['state']} is ${capitals[i]['capital']}`);
+    }
+    if (capitals[i].hasOwnProperty('country')){
+     console.log(capitals.length)
+      arr.push(`The capital of ${capitals[i]['country']} is ${capitals[i]['capital']}`);
+    }
+  }
+  return arr;
+}
+```
