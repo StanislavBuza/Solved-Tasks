@@ -1550,3 +1550,11 @@ function capital(capitals){
   return arr;
 }
 ```
+#### CodeWars Task : Enumerable Magic #5- True for Just One?
+```javascript
+function one(arr, fun){
+  let newArr = arr.filter(fun);
+  if(newArr.length > 1 || newArr.length == 0 ) return false;
+  return true;
+}
+```
