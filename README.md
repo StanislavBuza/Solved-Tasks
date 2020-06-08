@@ -1566,3 +1566,13 @@ function largestPairSum(numbers)
   return ordered[0] + ordered[1];
 }
 ```
+#### CodeWars Task : Series of integers from m to n
+```javascript
+function generateIntegers(m, n) {
+  let arr = [];
+  for(let i = m; m <= n; m++){
+    arr.push(m)
+  }
+  return arr;
+}
+```
