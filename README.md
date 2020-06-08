@@ -1558,3 +1558,11 @@ function one(arr, fun){
   return true;
 }
 ```
+#### CodeWars Task : Largest pair sum in array
+```javascript
+function largestPairSum(numbers)
+{
+  let ordered = numbers.sort((a,b) => b - a);
+  return ordered[0] + ordered[1];
+}
+```
