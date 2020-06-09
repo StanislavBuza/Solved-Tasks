@@ -1576,3 +1576,13 @@ function generateIntegers(m, n) {
   return arr;
 }
 ```
+#### CodeWars Task : Round up to the next multiple of 5
+```javascript
+function roundToNext5(n){
+  let num = n
+  while(num % 5 !== 0){
+  num++
+  }
+  return num;
+}
+```
