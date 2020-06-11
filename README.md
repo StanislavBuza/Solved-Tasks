@@ -1592,3 +1592,13 @@ function reject(array, predicate) {
   return array.filter(el => !predicate(el))
 }
 ```
+#### CodeWars Task : Halving Sum
+```javascript
+function halvingSum(n) {
+  let sum = 0
+  for(let i = n; i > 0; i = Math.floor(i/2)){
+    sum +=i
+  }
+  return sum;
+}
+```
