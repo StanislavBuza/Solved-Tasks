@@ -1586,3 +1586,9 @@ function roundToNext5(n){
   return num;
 }
 ```
+#### CodeWars Task : The reject() function
+```javascript
+function reject(array, predicate) {
+  return array.filter(el => !predicate(el))
+}
+```
