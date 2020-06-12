@@ -1615,3 +1615,10 @@ function modifiedSum(a, n) {
   return sumPow - sum;
 }
 ```
+#### CodeWars Task : Say hello!
+```javascript
+function greet(name) {
+  if (typeof name == "string" && name.length) return `hello ${name}!`;
+  return null;
+}
+```
