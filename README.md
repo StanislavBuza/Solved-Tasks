@@ -1602,3 +1602,16 @@ function halvingSum(n) {
   return sum;
 }
 ```
+#### CodeWars Task : Nth power rules them all!
+```javascript
+function modifiedSum(a, n) {
+  let sumPow = 0;
+  let sum = 0;
+  for(let i = 0; i < a.length; i++){
+    sumPow += Math.pow(a[i],n);
+    sum += a[i]; 
+  }
+  console.log()
+  return sumPow - sum;
+}
+```
