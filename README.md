@@ -1622,3 +1622,15 @@ function greet(name) {
   return null;
 }
 ```
+#### CodeWars Task : Complete Series
+```javascript
+function completeSeries(arr) {
+  let myArr = [];
+  arr.sort((a,b) => b - a);
+  for(let i = 0; i <= arr[0]; i++){
+    if(arr.indexOf(arr[i]) !== arr.lastIndexOf(arr[i])) return [0]
+    myArr.push(i);
+  }
+  return myArr;
+}
+```
