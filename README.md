@@ -1634,3 +1634,9 @@ function completeSeries(arr) {
   return myArr;
 }
 ```
+#### CodeWars Task : Greet Me
+```javascript
+let greet = function(name) {
+  return "Hello " + name[0].toUpperCase() + name.toLowerCase().slice(1,name.length) + "!"
+};
+```
