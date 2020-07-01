@@ -1640,3 +1640,16 @@ let greet = function(name) {
   return "Hello " + name[0].toUpperCase() + name.toLowerCase().slice(1,name.length) + "!"
 };
 ```
+#### CodeWars Task : Unique string characters
+```javascript
+function solve(a,b){
+  let myStr = "";
+  for(let i = 0; i < a.length; i++){
+    if(!b.includes(a[i]) && typeof a[i] == "string") myStr += a[i];   
+  }
+  for(let k = 0; k < b.length; k++){
+      if(!a.includes(b[k]) && typeof b[k] == "string") myStr += b[k];
+    }
+  return myStr;
+};
+```
