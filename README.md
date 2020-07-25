@@ -1653,3 +1653,23 @@ function solve(a,b){
   return myStr;
 };
 ```
+#### CodeWars Task : Mr Martingale
+```javascript
+function martingale(bank, out)
+{
+  let outcome = bank;
+  let stake = 100;
+  let zero = 1
+ for(let i = 0; i < out.length ; i++){
+   if(out[i] == 1 ) {
+     outcome += stake * zero;
+     zero = 1;
+   }
+   if(out[i] == 0 ) {
+     outcome -= stake * zero
+     zero*=2
+   } 
+ };
+  return outcome;
+}
+```
