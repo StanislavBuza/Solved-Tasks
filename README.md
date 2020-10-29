@@ -1653,23 +1653,21 @@ function solve(a,b){
   return myStr;
 };
 ```
-#### CodeWars Task : Mr Martingale
+
+#### CodeWars Task : Sentences should start with capital letters.
 ```javascript
-function martingale(bank, out)
-{
-  let outcome = bank;
-  let stake = 100;
-  let zero = 1
- for(let i = 0; i < out.length ; i++){
-   if(out[i] == 1 ) {
-     outcome += stake * zero;
-     zero = 1;
-   }
-   if(out[i] == 0 ) {
-     outcome -= stake * zero
-     zero*=2
-   } 
- };
-  return outcome;
+function fix(paragraph){
+  if(paragraph.length == 0) return paragraph;
+  let fixed = paragraph[0].toUpperCase();
+  for(let i = 1; i < paragraph.length ; i++){
+    if(paragraph[i] == " " && paragraph[i - 1] == "."){
+      fixed += paragraph[i]
+      fixed += paragraph[i+1].toUpperCase();
+      i++
+    } else {
+      fixed += paragraph[i]
+    }
+  }
+  return fixed;
 }
 ```
