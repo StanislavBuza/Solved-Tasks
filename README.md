@@ -1671,3 +1671,21 @@ function fix(paragraph){
   return fixed;
 }
 ```
+
+#### CodeWars Task : Alternate capitalization
+```javascript
+function capitalize(s){
+  let odd = "";
+  let even = ""
+  s.split("").map((el, i) => {
+    if(i % 2 == 0){
+      odd+=el.toUpperCase();
+      even+=el;
+    } else {
+      even+=el.toUpperCase();
+      odd+=el;
+    }
+  })
+  return [odd , even];
+};
+```
