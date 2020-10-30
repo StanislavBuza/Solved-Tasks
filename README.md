@@ -1689,3 +1689,13 @@ function capitalize(s){
   return [odd , even];
 };
 ```
+
+#### CodeWars Task : Vowel Count
+```javascript
+function getCount(str) {
+  var vowelsCount = 0;
+  let vowels = "aeiou"
+  str.split("").map(el => vowels.includes(el)? vowelsCount++:el )
+  return vowelsCount;
+}
+```
