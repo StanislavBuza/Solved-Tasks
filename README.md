@@ -1699,3 +1699,19 @@ function getCount(str) {
   return vowelsCount;
 }
 ```
+
+#### CodeWars Task : Find the odd int
+```javascript
+function findOdd(array) {
+  array.sort();
+  let num = [];
+  for(let i = 0; i < array.length ; i++){
+    if(array[i] == array[i+1] ){
+      i++
+    } else {
+      num = array[i]
+    }
+  }
+  return num;
+}
+```
