@@ -1715,3 +1715,11 @@ function findOdd(array) {
   return num;
 }
 ```
+
+#### CodeWars Task : Freudian translator
+```javascript
+function toFreud(string) {
+if(string === "") return "";
+return string.split(" ").map(el => "sex").join(" ");
+}
+```
